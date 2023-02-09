@@ -24,6 +24,7 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
+git branch -M main
 git push -f $githubUrl main:gh-pages # 推送到github
 
 cd - # 退回开始所在目录
