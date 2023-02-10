@@ -27,29 +27,6 @@ module.exports = {
     editLinks: true, // 编辑链接
     editLinkText: '编辑',
 
-    // 以下配置是Vdoing主题改动的和新增的配置
-    category: true, // 是否打开分类功能，默认true。
-    tag: true, // 是否打开标签功能，默认true。 
-    archive: true, // 是否打开归档功能，默认true。 
-    categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
-    bodyBgImg: [
-      'https://img.recreyed.ml/e0d615a6-6507-4334-9758-718130984d26.webp',
-    ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
-    bodyBgImgOpacity: 0.8,
-    bodyBgImgInterval: 0, //body有多张背景大图时的切换间隔
-
-    titleBadge: true, // 文章标题前的图标是否显示，默认true
-    // titleBadgeIcons: [],// 文章标题前图标的地址，默认主题内置图标
-
-    // 左侧边栏。温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
-    sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
-    sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
-    
-    updateBar: { // 最近更新栏
-      showToArticle: true, // 显示到文章页底部，默认true
-      moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-    },
-
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
       name: 'Hitaki', // 必需
       href: 'https://github.com/recreyed' // 可选的
@@ -72,17 +49,50 @@ module.exports = {
           title: 'GitHub',
           link: 'https://github.com/recreyed'
         },
-        // {
-        //   iconClass: 'icon-erji',
-        //   title: '听音乐',
-        //   link: 'https://music.163.com/#/playlist?id=755597173'
-        // }
+        {
+          iconClass: 'icon-QQ',
+          title: 'QQ',
+          link: 'http://wpa.qq.com/msgrd?v=3&uin=1760603940&site=qq&menu=yes'
+        }
       ]
     },
     footer: { // 页脚信息
       createYear: 2020, // 博客创建年份
       copyrightInfo: 'Hitaki | MIT License', // 博客版权信息，支持a标签
-    }
+    },
+
+    extendFrontmatter: { //自动生成front matter
+      author: {
+        name: 'hitaki',
+        link: 'https://github.com/recreyed'
+      },
+    },
+
+    // 以下配置是Vdoing主题改动的和新增的配置
+    category: true, // 是否打开分类功能，默认true。
+    tag: true, // 是否打开标签功能，默认true。 
+    archive: true, // 是否打开归档功能，默认true。 
+    categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
+    bodyBgImg: [
+      'https://img.recreyed.ml/e0d615a6-6507-4334-9758-718130984d26.webp',
+    ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
+    bodyBgImgOpacity: 0.8,
+    bodyBgImgInterval: 0, //body有多张背景大图时的切换间隔
+
+    titleBadge: true, // 文章标题前的图标是否显示，默认true
+    // titleBadgeIcons: [],// 文章标题前图标的地址，默认主题内置图标
+
+    // 左侧边栏。温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
+    sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
+
+    rightMenuBar: true, //是否显示右侧文章大纲栏。设置为false或屏宽小于1300px时，文章大纲将与左侧侧边栏混合在一起
+    
+    updateBar: { // 最近更新栏
+      showToArticle: true, // 显示到文章页底部，默认true
+      moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
+    },
+
   },
   plugins: [ // 插件
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
