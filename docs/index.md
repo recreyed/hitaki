@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Vdoing's blog
+heroText: Hitaki's blog
 tagline: Vdoing主题演示博客。
 # actionText: 立刻进入 →
 # actionLink: /web/
