@@ -35,20 +35,20 @@ module.exports = {
     bodyBgImg: [
       'https://img.recreyed.ml/e0d615a6-6507-4334-9758-718130984d26.webp',
     ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
+    bodyBgImgOpacity: 0.8,
+    bodyBgImgInterval: 0, //body有多张背景大图时的切换间隔
 
-    // titleBadge: false, // 文章标题前的图标是否显示，默认true
-    // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
-    //   '图标地址1',
-    //   '图标地址2'
-    // ],
+    titleBadge: true, // 文章标题前的图标是否显示，默认true
+    // titleBadgeIcons: [],// 文章标题前图标的地址，默认主题内置图标
 
-    sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
-
+    // 左侧边栏。温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
     sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
-    // updateBar: { // 最近更新栏
-    //   showToArticle: true, // 显示到文章页底部，默认true
-    //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-    // },
+    
+    updateBar: { // 最近更新栏
+      showToArticle: true, // 显示到文章页底部，默认true
+      moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
+    },
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
       name: 'Hitaki', // 必需
