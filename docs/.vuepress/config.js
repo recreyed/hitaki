@@ -32,7 +32,7 @@ module.exports = {
       href: 'https://github.com/recreyed' // 可选的
     },
     blogger: { // 博主信息，显示在首页侧边栏
-      avatar: 'https://img.recreyed.ml/cfc9c2ef-d65f-4005-aa2a-2457adb42876.jpeg',
+      avatar: 'https://img.recreyed.tk/cfc9c2ef-d65f-4005-aa2a-2457adb42876.jpeg',
       name: 'Hitaki',
       slogan: '疾风骤雨'
     },
@@ -74,7 +74,7 @@ module.exports = {
     archive: true, // 是否打开归档功能，默认true。 
     categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
     bodyBgImg: [
-      'https://img.recreyed.ml/e0d615a6-6507-4334-9758-718130984d26.webp',
+      'https://img.recreyed.tk/e0d615a6-6507-4334-9758-718130984d26.webp',
     ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.8,
     bodyBgImgInterval: 0, //body有多张背景大图时的切换间隔
